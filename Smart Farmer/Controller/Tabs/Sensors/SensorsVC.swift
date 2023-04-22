@@ -64,9 +64,9 @@ extension SensorsVC: UITableViewDelegate, UITableViewDataSource {
         //let transferSensorsData = sensorsData[indexPath.row]
         //let controller = (storyboard?.instantiateViewController(identifier: C.signUpNC))!
 
-        let vc = (storyboard?.instantiateViewController(withIdentifier: C.sensorDetails))!
         let sensorVC = SensorDetailsVC()
         sensorVC.sensDetails = sensorsData[indexPath.row]
+        let vc = (storyboard?.instantiateViewController(withIdentifier: C.sensorDetails))!
         navigationController?.pushViewController(vc, animated: true)
     }
 }

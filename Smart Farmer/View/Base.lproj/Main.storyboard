@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pm1-Pu-vKt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="weV-ml-AVv">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -643,40 +643,69 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="QhG-7u-BHV">
-                                <rect key="frame" x="32" y="135" width="329" height="84.666666666666686"/>
+                                <rect key="frame" x="32" y="135" width="329" height="104"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzQ-2R-Amd">
-                                        <rect key="frame" x="0.0" y="0.0" width="81.666666666666671" height="34.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="93" height="38"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Log out"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Log out">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                            <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="LogOutButton:" destination="weV-ml-AVv" eventType="touchUpInside" id="eCZ-bL-YzF"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFe-7V-aSI">
-                                        <rect key="frame" x="0.0" y="50.333333333333343" width="116" height="34.333333333333343"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Appearance"/>
-                                        <connections>
-                                            <action selector="AppearanceButton:" destination="weV-ml-AVv" eventType="touchUpInside" id="zSv-Fb-0QG"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="QdF-3L-PZ4">
+                                        <rect key="frame" x="0.0" y="54" width="329" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFe-7V-aSI">
+                                                <rect key="frame" x="0.0" y="0.0" width="139" height="50"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Appearance">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <color key="baseForegroundColor" red="0.29393124580000002" green="0.64031428099999999" blue="0.26658031339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="AppearanceButton:" destination="weV-ml-AVv" eventType="touchUpInside" id="zSv-Fb-0QG"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7a5-7F-8HK">
+                                                <rect key="frame" x="187" y="0.0" width="142" height="50"/>
+                                                <color key="tintColor" red="0.29393124580000002" green="0.64031428099999999" blue="0.26658031339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="QdF-3L-PZ4" secondAttribute="trailing" id="7eF-TZ-GWn"/>
+                                    <constraint firstItem="QdF-3L-PZ4" firstAttribute="leading" secondItem="QhG-7u-BHV" secondAttribute="leading" id="sOG-pT-XgB"/>
+                                </constraints>
                             </stackView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qzM-1Y-KXN">
+                                <rect key="frame" x="0.0" y="553" width="393" height="216"/>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RfM-Ei-JUN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="qzM-1Y-KXN" firstAttribute="leading" secondItem="RfM-Ei-JUN" secondAttribute="leading" id="2bn-2s-4ny"/>
                             <constraint firstItem="RfM-Ei-JUN" firstAttribute="trailing" secondItem="QhG-7u-BHV" secondAttribute="trailing" constant="32" id="LGd-P5-WIe"/>
+                            <constraint firstItem="qzM-1Y-KXN" firstAttribute="bottom" secondItem="RfM-Ei-JUN" secondAttribute="bottom" id="USf-CW-ROi"/>
                             <constraint firstItem="QhG-7u-BHV" firstAttribute="leading" secondItem="RfM-Ei-JUN" secondAttribute="leading" constant="32" id="j91-tU-Uur"/>
+                            <constraint firstItem="qzM-1Y-KXN" firstAttribute="trailing" secondItem="RfM-Ei-JUN" secondAttribute="trailing" id="lki-UR-vDA"/>
                             <constraint firstItem="QhG-7u-BHV" firstAttribute="top" secondItem="RfM-Ei-JUN" secondAttribute="top" constant="32" id="lpt-AP-dDD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6Da-oK-9HJ"/>
+                    <connections>
+                        <outlet property="appearancePickUpView" destination="qzM-1Y-KXN" id="yot-QK-ZHk"/>
+                        <outlet property="settingsImage" destination="7a5-7F-8HK" id="D2E-m8-xMI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ozY-rS-V1s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8746" y="1942"/>
+            <point key="canvasLocation" x="8744.2748091603044" y="1941.549295774648"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="W7m-5Q-b9J">
