@@ -9,16 +9,13 @@ import UIKit
 
 class SettingsVC: UIViewController {
     
-    //MARK: IBOutlets
+//MARK: IBOutlets
     @IBAction func LogOutButton(_ sender: UIButton) {
     }
     @IBOutlet weak var appearanceButtonImage: UIButton!
     @IBAction func AppearanceButton(_ sender: UIButton) {
-        if appearancePickUpView.isHidden {
-            appearancePickUpView.isHidden = false
-        }
+        appearancePickUpView.isHidden = !appearancePickUpView.isHidden
     }
-    
     @IBOutlet weak var appearancePickUpView: UIPickerView!
     
     //MARK: Variables
@@ -29,7 +26,6 @@ class SettingsVC: UIViewController {
         super.viewDidLoad()
         appearancePickUpView.delegate = self
         appearancePickUpView.dataSource = self
-        
         appearancePickUpView.isHidden = true
     }
     
@@ -62,7 +58,7 @@ extension SettingsVC: UIPickerViewDelegate, UIPickerViewDataSource {
         
         // returns the # of rows in each component..
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return setAppearance().count
+        return appearance.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
@@ -79,4 +75,3 @@ extension SettingsVC: UIPickerViewDelegate, UIPickerViewDataSource {
         }
     }
 }
-//how to make uipickerview to be set on the first element every time it opens
