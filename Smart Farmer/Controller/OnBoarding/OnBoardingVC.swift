@@ -17,7 +17,7 @@ class OnBoardingVC: UIViewController {
     
     @IBAction func nextClicked(_ sender: Any) {
         if (currentPage == slides.count - 1){
-            let controller = (storyboard?.instantiateViewController(identifier: Constants.signUpNC))!
+            let controller = (storyboard?.instantiateViewController(identifier: Constants.lunchNC))!
             controller.modalPresentationStyle = .fullScreen
             controller.modalTransitionStyle = .flipHorizontal
             present(controller, animated: true, completion: nil)
@@ -76,6 +76,7 @@ extension OnBoardingVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }
     
+    //tells the delegate that the scroll view ended decelerating the scrolling movement
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let width = scrollView.frame.width
         currentPage = Int(scrollView.contentOffset.x / width)

@@ -11,6 +11,10 @@ class SettingsVC: UIViewController {
     
 //MARK: IBOutlets
     @IBAction func LogOutButton(_ sender: UIButton) {
+        let loggedOut = (storyboard?.instantiateViewController(withIdentifier: Constants.lunchNC))!
+        loggedOut.modalPresentationStyle = .fullScreen
+        loggedOut.modalTransitionStyle = .coverVertical
+        present(loggedOut, animated: true, completion: nil)
     }
     @IBOutlet weak var appearanceButtonImage: UIButton!
     @IBAction func AppearanceButton(_ sender: UIButton) {

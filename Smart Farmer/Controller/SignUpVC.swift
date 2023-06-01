@@ -14,6 +14,12 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var signUpEmailTF: UITextField!
     @IBOutlet weak var signUpPasswordTF: UITextField!
     @IBAction func signUpButton(_ sender: UIButton) {
+        //if signed up correctly then instantiate tab bar controller (AppTB)
+        let signToTabBar = (storyboard?.instantiateViewController(withIdentifier: Constants.tabBar))!
+        signToTabBar.modalPresentationStyle = .fullScreen
+        signToTabBar.modalTransitionStyle = .flipHorizontal
+        present(signToTabBar, animated: true, completion: nil)
+        //navigationController?.pushViewController(signToTabBar, animated: true)
     }
     @IBAction func signUpVCLoginButton(_ sender: UIButton) {
         let signUpToLogIn = LogInVC.instatiate()

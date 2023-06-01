@@ -13,9 +13,8 @@ class LunchVC: UIViewController {
     @IBOutlet weak var SloganLabel: UILabel!
     
     @IBAction func LunchVCsignUpButton(_ sender: UIButton) {
-        let sign = OnBoardingVC.instatiate()
-        sign.modalPresentationStyle = .fullScreen
-        present(sign, animated: true,completion: nil)
+        let sign = SignUpVC.instatiate()
+        navigationController?.pushViewController(sign, animated: true)
     }
     
     @IBAction func LunchVCLogInButton(_ sender: UIButton) {

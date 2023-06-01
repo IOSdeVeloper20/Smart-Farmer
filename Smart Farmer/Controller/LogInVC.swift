@@ -15,6 +15,11 @@ class LogInVC: UIViewController {
     @IBAction func forgotPassButton(_ sender: UIButton) {
     }
     @IBAction func logInButton(_ sender: UIButton) {
+        //check if logged in then instantiate tab bar controller (AppTB)
+        let loginToTabBar = (storyboard?.instantiateViewController(withIdentifier: Constants.tabBar))!
+        loginToTabBar.modalPresentationStyle = .fullScreen
+        loginToTabBar.modalTransitionStyle = .flipHorizontal
+        present(loginToTabBar, animated: true, completion: nil)
     }
     
 //MARK: Variables

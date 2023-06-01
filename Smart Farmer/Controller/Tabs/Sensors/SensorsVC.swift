@@ -60,9 +60,6 @@ extension SensorsVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //let transferSensorsData = sensorsData[indexPath.row]
-        //let controller = (storyboard?.instantiateViewController(identifier: C.signUpNC))!
-
         let sensorVC = SensorDetailsVC()
         sensorVC.sensDetails = sensorsData[indexPath.row]
         let vc = (storyboard?.instantiateViewController(withIdentifier: Constants.sensorDetails))!
