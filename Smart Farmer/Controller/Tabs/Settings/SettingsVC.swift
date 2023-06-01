@@ -9,10 +9,10 @@ import UIKit
 
 class SettingsVC: UIViewController {
     
-//MARK: IBOutlets
+    //MARK: IBOutlets
     @IBAction func LogOutButton(_ sender: UIButton) {
     }
-    
+    @IBOutlet weak var appearanceButtonImage: UIButton!
     @IBAction func AppearanceButton(_ sender: UIButton) {
         if appearancePickUpView.isHidden {
             appearancePickUpView.isHidden = false
@@ -20,10 +20,9 @@ class SettingsVC: UIViewController {
     }
     
     @IBOutlet weak var appearancePickUpView: UIPickerView!
-    @IBOutlet weak var settingsImage: UIImageView!
     
     //MARK: Variables
-    let appearance = ["Dark", "Light"]
+    let appearance = ["Light", "Dark"]
     
 //MARK: Life Cycle
     override func viewDidLoad() {
@@ -39,14 +38,14 @@ class SettingsVC: UIViewController {
         switch traitCollection.userInterfaceStyle {
         case .light:
             overrideUserInterfaceStyle = .light
-            settingsImage.image = UIImage(systemName: "sun.max")
-            let lightAppearance = ["Light", "Dark"]
-            return lightAppearance
+            appearanceButtonImage.setImage(UIImage(systemName: "sun.max"), for: .normal)
+            appearanceButtonImage.tintColor = .black
+            return appearance
         case .dark:
             overrideUserInterfaceStyle = .dark
-            settingsImage.image = UIImage(systemName: "moon.fill")
-            let darkAppearance = ["Dark", "Light"]
-            return darkAppearance
+            appearanceButtonImage.setImage(UIImage(systemName: "moon.fill"), for: .normal)
+            appearanceButtonImage.tintColor = .white
+            return appearance
         default:
             return ["Error"]
         }
@@ -71,14 +70,6 @@ extension SettingsVC: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-//        switch row {
-//        case 0:
-//            overrideUserInterfaceStyle = .dark
-//        case 1:
-//            overrideUserInterfaceStyle = .light
-//        default:
-//            return
-//        }
         if (setAppearance()[row] == "Light") {
             overrideUserInterfaceStyle = .light
             appearancePickUpView.isHidden = true

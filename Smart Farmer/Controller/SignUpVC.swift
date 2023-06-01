@@ -16,7 +16,7 @@ class SignUpVC: UIViewController {
     @IBAction func signUpButton(_ sender: UIButton) {
     }
     @IBAction func signUpVCLoginButton(_ sender: UIButton) {
-        let signUpToLogIn = (storyboard?.instantiateViewController(identifier: C.logInVC))!
+        let signUpToLogIn = LogInVC.instatiate()
         navigationController?.pushViewController(signUpToLogIn, animated: true)
     }
     

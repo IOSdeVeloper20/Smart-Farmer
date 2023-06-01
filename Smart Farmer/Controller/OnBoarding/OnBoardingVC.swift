@@ -17,7 +17,7 @@ class OnBoardingVC: UIViewController {
     
     @IBAction func nextClicked(_ sender: Any) {
         if (currentPage == slides.count - 1){
-            let controller = (storyboard?.instantiateViewController(identifier: C.signUpNC))!
+            let controller = (storyboard?.instantiateViewController(identifier: Constants.signUpNC))!
             controller.modalPresentationStyle = .fullScreen
             controller.modalTransitionStyle = .flipHorizontal
             present(controller, animated: true, completion: nil)
@@ -66,7 +66,7 @@ extension OnBoardingVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
     
     //specify the cell to be used for each row
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: C.onBoardingCellID, for: indexPath) as! OnBoardingCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.onBoardingCellID, for: indexPath) as! OnBoardingCollectionViewCell
         cell.setUp(slide: slides[indexPath.row])
         return cell
     }

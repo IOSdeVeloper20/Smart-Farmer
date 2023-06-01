@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,14 @@
 		2369A1B929EE8C6A0019EAC8 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2369A1B829EE8C6A0019EAC8 /* SettingsVC.swift */; };
 		2379915329DC5D63002FDAEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2379915229DC5D63002FDAEA /* AppDelegate.swift */; };
 		2379915529DC5D63002FDAEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2379915429DC5D63002FDAEA /* SceneDelegate.swift */; };
-		2379915A29DC5D63002FDAEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2379915829DC5D63002FDAEA /* Main.storyboard */; };
 		2379915C29DC5D66002FDAEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2379915B29DC5D66002FDAEA /* Assets.xcassets */; };
+		238213082A274B4F00467766 /* GraphVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238213072A274B4F00467766 /* GraphVC.swift */; };
+		2382130D2A27A7F600467766 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2379915829DC5D63002FDAEA /* Main.storyboard */; };
 		23A2C8FC29EEA550006E28FD /* InstantiationExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2C8FB29EEA550006E28FD /* InstantiationExtention.swift */; };
+		23A38BDB2A28A4E0005B5347 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A38BDA2A28A4E0005B5347 /* CustomTableViewCell.swift */; };
+		23A38BE42A28B18F005B5347 /* ControlTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A38BE22A28B18F005B5347 /* ControlTableViewCell.swift */; };
+		23A38BE52A28B18F005B5347 /* ControlTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A38BE32A28B18F005B5347 /* ControlTableViewCell.xib */; };
+		23A38BE72A28D3F1005B5347 /* Controls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A38BE62A28D3F1005B5347 /* Controls.swift */; };
 		23B042B929E374470025999F /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B042B829E374470025999F /* SignUpVC.swift */; };
 		23B042BB29E374620025999F /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B042BA29E374620025999F /* LogInVC.swift */; };
 		23D8B88D29EB070600E0D14A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D8B88C29EB070600E0D14A /* HomeVC.swift */; };
@@ -27,6 +32,7 @@
 		23FCA7E229ECE9C70046E4DA /* SensorsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCA7E029ECE9C70046E4DA /* SensorsTableViewCell.swift */; };
 		23FCA7E329ECE9C70046E4DA /* SensorsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23FCA7E129ECE9C70046E4DA /* SensorsTableViewCell.xib */; };
 		23FCA7E529ECEDA90046E4DA /* Sensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCA7E429ECEDA90046E4DA /* Sensors.swift */; };
+		D59697ACFDBB85BFA3133B61 /* libPods-Smart Farmer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C663794DF3678FE0CEE736FE /* libPods-Smart Farmer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +47,12 @@
 		2379915929DC5D63002FDAEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2379915B29DC5D66002FDAEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2379916029DC5D66002FDAEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		238213072A274B4F00467766 /* GraphVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphVC.swift; sourceTree = "<group>"; };
 		23A2C8FB29EEA550006E28FD /* InstantiationExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantiationExtention.swift; sourceTree = "<group>"; };
+		23A38BDA2A28A4E0005B5347 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		23A38BE22A28B18F005B5347 /* ControlTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlTableViewCell.swift; sourceTree = "<group>"; };
+		23A38BE32A28B18F005B5347 /* ControlTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControlTableViewCell.xib; sourceTree = "<group>"; };
+		23A38BE62A28D3F1005B5347 /* Controls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controls.swift; sourceTree = "<group>"; };
 		23B042B829E374470025999F /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		23B042BA29E374620025999F /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
 		23D8B88C29EB070600E0D14A /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -52,6 +63,9 @@
 		23FCA7E029ECE9C70046E4DA /* SensorsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsTableViewCell.swift; sourceTree = "<group>"; };
 		23FCA7E129ECE9C70046E4DA /* SensorsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SensorsTableViewCell.xib; sourceTree = "<group>"; };
 		23FCA7E429ECEDA90046E4DA /* Sensors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensors.swift; sourceTree = "<group>"; };
+		631B4DA7E40FDFF649178093 /* Pods-Smart Farmer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Farmer.debug.xcconfig"; path = "Target Support Files/Pods-Smart Farmer/Pods-Smart Farmer.debug.xcconfig"; sourceTree = "<group>"; };
+		C663794DF3678FE0CEE736FE /* libPods-Smart Farmer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Smart Farmer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D190D2D6E734AD7A8EDA5389 /* Pods-Smart Farmer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Farmer.release.xcconfig"; path = "Target Support Files/Pods-Smart Farmer/Pods-Smart Farmer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D59697ACFDBB85BFA3133B61 /* libPods-Smart Farmer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				2369A1B629EE8C4D0019EAC8 /* ControlVC.swift */,
+				23A38BE22A28B18F005B5347 /* ControlTableViewCell.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -104,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				23D8B88C29EB070600E0D14A /* HomeVC.swift */,
+				238213072A274B4F00467766 /* GraphVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -113,6 +130,8 @@
 			children = (
 				2379915129DC5D63002FDAEA /* Smart Farmer */,
 				2379915029DC5D63002FDAEA /* Products */,
+				E15C2DF00E246E5F62A22D9E /* Pods */,
+				CAD75C669F94BC71BE81EB4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,6 +172,7 @@
 			children = (
 				23F7431829DE386B008EADD4 /* OnBoardingSlides.swift */,
 				23FCA7E429ECEDA90046E4DA /* Sensors.swift */,
+				23A38BE62A28D3F1005B5347 /* Controls.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -162,6 +182,7 @@
 			children = (
 				2379915829DC5D63002FDAEA /* Main.storyboard */,
 				23FCA7E129ECE9C70046E4DA /* SensorsTableViewCell.xib */,
+				23A38BE32A28B18F005B5347 /* ControlTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				23A2C8FB29EEA550006E28FD /* InstantiationExtention.swift */,
+				23A38BDA2A28A4E0005B5347 /* CustomTableViewCell.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -197,6 +219,23 @@
 			path = Tabs;
 			sourceTree = "<group>";
 		};
+		CAD75C669F94BC71BE81EB4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C663794DF3678FE0CEE736FE /* libPods-Smart Farmer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E15C2DF00E246E5F62A22D9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				631B4DA7E40FDFF649178093 /* Pods-Smart Farmer.debug.xcconfig */,
+				D190D2D6E734AD7A8EDA5389 /* Pods-Smart Farmer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -204,6 +243,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2379916329DC5D66002FDAEA /* Build configuration list for PBXNativeTarget "Smart Farmer" */;
 			buildPhases = (
+				03B173AA22502879B975FC03 /* [CP] Check Pods Manifest.lock */,
 				2379914B29DC5D63002FDAEA /* Sources */,
 				2379914C29DC5D63002FDAEA /* Frameworks */,
 				2379914D29DC5D63002FDAEA /* Resources */,
@@ -233,7 +273,7 @@
 				};
 			};
 			buildConfigurationList = 2379914A29DC5D63002FDAEA /* Build configuration list for PBXProject "Smart Farmer" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -255,13 +295,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2382130D2A27A7F600467766 /* Main.storyboard in Resources */,
+				23A38BE52A28B18F005B5347 /* ControlTableViewCell.xib in Resources */,
 				2379915C29DC5D66002FDAEA /* Assets.xcassets in Resources */,
 				23FCA7E329ECE9C70046E4DA /* SensorsTableViewCell.xib in Resources */,
-				2379915A29DC5D63002FDAEA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03B173AA22502879B975FC03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Smart Farmer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2379914B29DC5D63002FDAEA /* Sources */ = {
@@ -273,8 +339,12 @@
 				23D8B88D29EB070600E0D14A /* HomeVC.swift in Sources */,
 				23F7431B29DE3D07008EADD4 /* OnBoardingCollectionViewCell.swift in Sources */,
 				235E5D3729DC933F0089FC85 /* LunchVC.swift in Sources */,
+				23A38BE42A28B18F005B5347 /* ControlTableViewCell.swift in Sources */,
+				23A38BDB2A28A4E0005B5347 /* CustomTableViewCell.swift in Sources */,
 				2369A1B929EE8C6A0019EAC8 /* SettingsVC.swift in Sources */,
 				2379915329DC5D63002FDAEA /* AppDelegate.swift in Sources */,
+				238213082A274B4F00467766 /* GraphVC.swift in Sources */,
+				23A38BE72A28D3F1005B5347 /* Controls.swift in Sources */,
 				23FCA7E229ECE9C70046E4DA /* SensorsTableViewCell.swift in Sources */,
 				2379915529DC5D63002FDAEA /* SceneDelegate.swift in Sources */,
 				23FCA7DF29ECE7DB0046E4DA /* SensorsVC.swift in Sources */,
@@ -418,6 +488,7 @@
 		};
 		2379916429DC5D66002FDAEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 631B4DA7E40FDFF649178093 /* Pods-Smart Farmer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -438,14 +509,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ahmedsherif.Smart-Farmer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		2379916529DC5D66002FDAEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D190D2D6E734AD7A8EDA5389 /* Pods-Smart Farmer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -466,9 +541,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ahmedsherif.Smart-Farmer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

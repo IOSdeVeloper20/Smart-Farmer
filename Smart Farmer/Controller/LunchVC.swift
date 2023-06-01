@@ -13,13 +13,13 @@ class LunchVC: UIViewController {
     @IBOutlet weak var SloganLabel: UILabel!
     
     @IBAction func LunchVCsignUpButton(_ sender: UIButton) {
-        let sign = (storyboard?.instantiateViewController(withIdentifier: C.onBoardingVC))!
+        let sign = OnBoardingVC.instatiate()
         sign.modalPresentationStyle = .fullScreen
         present(sign, animated: true,completion: nil)
     }
     
     @IBAction func LunchVCLogInButton(_ sender: UIButton) {
-        let login = (storyboard?.instantiateViewController(withIdentifier: C.logInVC))!
+        let login = LogInVC.instatiate()
         navigationController?.pushViewController(login, animated: true)
     }
     
@@ -42,7 +42,7 @@ class LunchVC: UIViewController {
         
         SloganLabel.text = ""
         var charIndex = 0.0
-        let slogan = C.slogan
+        let slogan = Constants.slogan
         
         for character in slogan {
             Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false){ (timer) in

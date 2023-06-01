@@ -10,13 +10,13 @@ import UIKit
 class SensorsVC: UIViewController {
     
 //MARK: IBOutlets
-    @IBOutlet weak var TableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
 //MARK: Variables
     var sensorsData: [Sensors] = [
-        .init(image: UIImage(systemName: "sensor"), title: "test0", description: "testdesc0"),
-        .init(image: UIImage(systemName: "sensor"), title: "test1", description: "testdesc1"),
-        .init(image: UIImage(systemName: "sensor"), title: "test2", description: "testdes2")
+        .init(image: UIImage(named: "Temperature sensor"), title: "Temperature Sensor", description: "testdesc0"),
+        .init(image: UIImage(named: "Temperature sensor"), title: "test1", description: "testdesc1"),
+        .init(image: UIImage(named: "Temperature sensor"), title: "test2", description: "testdes2")
         
     ]
 //MARK: Life Cycle
@@ -26,21 +26,24 @@ class SensorsVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        configureNavigationController()
+        //configureNavigationController()
     }
     
 //MARK: Functions
     func tableViewConfig() {
-        TableView.delegate = self
-        TableView.dataSource = self
-        TableView.register(UINib(nibName: C.sensorCell, bundle: nil), forCellReuseIdentifier: C.sensorCell)
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        /*UINib: the name of nib cell file
+         forCellReuseIdentifier: the id that is set for the cell*/
+        tableView.register(UINib(/*nibName must be the real name of Xib file*/nibName: Constants.sensorCell, bundle: nil), forCellReuseIdentifier: Constants.sensorCell)
     }
     
-    func configureNavigationController() {
-        view.backgroundColor = .systemBackground
-        title = "Sensors"
-        navigationController?.navigationBar.prefersLargeTitles  =   true
-    }
+//    func configureNavigationController() {
+//        view.backgroundColor = .systemBackground
+//        title = "Sensors"
+//        navigationController?.navigationBar.prefersLargeTitles  =   true
+//    }
 }
 
 //MARK: Extension
@@ -51,13 +54,9 @@ extension SensorsVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = TableView.dequeueReusableCell(withIdentifier: C.sensorCell, for: indexPath) as! SensorsTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.sensorCell, for: indexPath) as! SensorsTableViewCell
         cell.setCell(usedSensors: sensorsData[indexPath.row])
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -65,8 +64,8 @@ extension SensorsVC: UITableViewDelegate, UITableViewDataSource {
         //let controller = (storyboard?.instantiateViewController(identifier: C.signUpNC))!
 
         let sensorVC = SensorDetailsVC()
-        sensorVC.sensDetails = sensorsData[indexPath.row]
-        let vc = (storyboard?.instantiateViewController(withIdentifier: C.sensorDetails))!
-        navigationController?.pushViewController(vc, animated: true)
+        sensorVC.setUpDetails(sensorInfo: sensorsData[indexPath.row])
+        let vc = (storyboard?.instantiateViewController(withIdentifier: Constants.sensorDetails))!
+        navigationController?.pushViewController(sensorVC, animated: true)
     }
 }

@@ -1,0 +1,147 @@
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "2Or-GC-JiC"; */
+"2Or-GC-JiC.text" = "Email";
+
+/* Class = "UILabel"; text = "Lights"; ObjectID = "3Gv-PV-WUv"; */
+"3Gv-PV-WUv.text" = "Lights";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "3Xy-fz-aDG"; */
+"3Xy-fz-aDG.placeholder" = "Password";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "6Da-oK-9HJ"; */
+"6Da-oK-9HJ.title" = "Settings";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "7j8-qG-rlJ"; */
+"7j8-qG-rlJ.title" = "Home";
+
+/* Class = "UILabel"; text = "This app will help you manage you crop."; ObjectID = "9ZG-AA-EXk"; */
+"9ZG-AA-EXk.text" = "This app will help you manage you crop.";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "9iB-zP-YJM"; */
+"9iB-zP-YJM.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "9mH-iP-A3P"; */
+"9mH-iP-A3P.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Control"; ObjectID = "FDS-b1-YqK"; */
+"FDS-b1-YqK.title" = "Control";
+
+/* Class = "UITextField"; placeholder = " Email"; ObjectID = "JBA-XU-Stf"; */
+"JBA-XU-Stf.placeholder" = " Email";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "JOP-M8-FKs"; */
+"JOP-M8-FKs.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Log In"; ObjectID = "LW2-UD-A4N"; */
+"LW2-UD-A4N.text" = "Log In";
+
+/* Class = "UIButton"; configuration.title = "Next"; ObjectID = "Ljg-Iu-l3v"; */
+"Ljg-Iu-l3v.configuration.title" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Ljg-Iu-l3v"; */
+"Ljg-Iu-l3v.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "MMh-wu-BiN"; */
+"MMh-wu-BiN.text" = "Password";
+
+/* Class = "UIButton"; configuration.title = "Log In"; ObjectID = "Nvh-cr-ScX"; */
+"Nvh-cr-ScX.configuration.title" = "Log In";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Nvh-cr-ScX"; */
+"Nvh-cr-ScX.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Forgot Password?"; ObjectID = "Nzl-sq-H89"; */
+"Nzl-sq-H89.configuration.title" = "Forgot Password?";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Nzl-sq-H89"; */
+"Nzl-sq-H89.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "OQZ-iH-lvm"; */
+"OQZ-iH-lvm.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Log In"; ObjectID = "SWu-dv-LLx"; */
+"SWu-dv-LLx.configuration.title" = "Log In";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "SWu-dv-LLx"; */
+"SWu-dv-LLx.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Sensors"; ObjectID = "TyH-Yf-RY0"; */
+"TyH-Yf-RY0.title" = "Sensors";
+
+/* Class = "UITabBarItem"; title = "Control"; ObjectID = "ZIE-Ri-Sz2"; */
+"ZIE-Ri-Sz2.title" = "Control";
+
+/* Class = "UILabel"; text = "Temprature Level:"; ObjectID = "ZQI-0j-84w"; */
+"ZQI-0j-84w.text" = "Temprature Level:";
+
+/* Class = "UILabel"; text = "Already have an account?"; ObjectID = "aQh-XW-iRi"; */
+"aQh-XW-iRi.text" = "Already have an account?";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "bDc-Oq-eYZ"; */
+"bDc-Oq-eYZ.title" = "Settings";
+
+/* Class = "UILabel"; text = "This app will help you manage you crop."; ObjectID = "cHs-8h-L7Y"; */
+"cHs-8h-L7Y.text" = "This app will help you manage you crop.";
+
+/* Class = "UINavigationItem"; title = "Home"; ObjectID = "dIA-HA-f2J"; */
+"dIA-HA-f2J.title" = "Home";
+
+/* Class = "UILabel"; text = "Agriculture Made Easy"; ObjectID = "fDm-I8-xQc"; */
+"fDm-I8-xQc.text" = "Agriculture Made Easy";
+
+/* Class = "UILabel"; text = "Sign Up"; ObjectID = "fPK-NO-5jj"; */
+"fPK-NO-5jj.text" = "Sign Up";
+
+/* Class = "UIButton"; configuration.title = "Log out"; ObjectID = "fzQ-2R-Amd"; */
+"fzQ-2R-Amd.configuration.title" = "Log out";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fzQ-2R-Amd"; */
+"fzQ-2R-Amd.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "g6M-kV-X2h"; */
+"g6M-kV-X2h.text" = "Password";
+
+/* Class = "UILabel"; text = "30 %"; ObjectID = "gtu-2C-Goq"; */
+"gtu-2C-Goq.text" = "30 %";
+
+/* Class = "UITabBarItem"; title = "Sensors"; ObjectID = "hRN-8n-D1V"; */
+"hRN-8n-D1V.title" = "Sensors";
+
+/* Class = "UILabel"; text = "50 %"; ObjectID = "ixX-ks-dIt"; */
+"ixX-ks-dIt.text" = "50 %";
+
+/* Class = "UIButton"; configuration.title = "Log In"; ObjectID = "k9i-kt-h6f"; */
+"k9i-kt-h6f.configuration.title" = "Log In";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "k9i-kt-h6f"; */
+"k9i-kt-h6f.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Water Level:"; ObjectID = "kh2-7Z-BU1"; */
+"kh2-7Z-BU1.text" = "Water Level:";
+
+/* Class = "UIButton"; configuration.title = "Sign Up"; ObjectID = "ngN-HT-Kl0"; */
+"ngN-HT-Kl0.configuration.title" = "Sign Up";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ngN-HT-Kl0"; */
+"ngN-HT-Kl0.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "sem-dY-VVZ"; */
+"sem-dY-VVZ.text" = "Email";
+
+/* Class = "UIButton"; configuration.title = "Appearance"; ObjectID = "uFe-7V-aSI"; */
+"uFe-7V-aSI.configuration.title" = "Appearance";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uFe-7V-aSI"; */
+"uFe-7V-aSI.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Sign Up"; ObjectID = "uz1-Bi-VyC"; */
+"uz1-Bi-VyC.configuration.title" = "Sign Up";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uz1-Bi-VyC"; */
+"uz1-Bi-VyC.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Tracking Graph"; ObjectID = "vKG-dc-1mu"; */
+"vKG-dc-1mu.text" = "Tracking Graph";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "yrJ-eU-XmI"; */
+"yrJ-eU-XmI.placeholder" = "Password";

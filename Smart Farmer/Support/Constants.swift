@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct C {
+struct Constants {
     static var slogan = "Agriculture made easy"
     static var onBoardingCellID = "OnBoardingCollectinViewCell"
     static var onBoardingVC = "OnBoardingVC"
@@ -17,4 +17,5 @@ struct C {
     static var tabBar = "AppTB"
     static var sensorCell = "SensorsTableViewCell"
     static var sensorDetails = "sensorDetails"
+    static var controlCell = "ControlTableViewCell"
 }
