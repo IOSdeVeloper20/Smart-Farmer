@@ -20,6 +20,7 @@ class OnBoardingVC: UIViewController {
             let controller = (storyboard?.instantiateViewController(identifier: Constants.lunchNC))!
             controller.modalPresentationStyle = .fullScreen
             controller.modalTransitionStyle = .flipHorizontal
+            UserDefaults.standard.hasOnBoarded = true
             present(controller, animated: true, completion: nil)
         } else {
             currentPage += 1

@@ -38,12 +38,6 @@ class SensorsVC: UIViewController {
          forCellReuseIdentifier: the id that is set for the cell*/
         tableView.register(UINib(/*nibName must be the real name of Xib file*/nibName: Constants.sensorCell, bundle: nil), forCellReuseIdentifier: Constants.sensorCell)
     }
-    
-//    func configureNavigationController() {
-//        view.backgroundColor = .systemBackground
-//        title = "Sensors"
-//        navigationController?.navigationBar.prefersLargeTitles  =   true
-//    }
 }
 
 //MARK: Extension

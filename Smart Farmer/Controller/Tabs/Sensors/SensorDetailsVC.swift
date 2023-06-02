@@ -15,7 +15,7 @@ class SensorDetailsVC: UIViewController {
     @IBOutlet weak var sensorDetailsDescriptionLbl: UILabel!
     
 //MARK: Variables
-    var sensDetails: Sensors!
+    var sensDetails: Sensors?
     
 //MARK: Life Cycle
     override func viewDidLoad() {
@@ -28,6 +28,7 @@ class SensorDetailsVC: UIViewController {
         sensorDetailsImage.image = sensDetails?.image
         sensorDetailsTitleLbl.text = sensDetails?.title
         sensorDetailsDescriptionLbl.text = sensDetails?.description
-        print("hello sensirs")
+        
+        print("sins")
     }
 }
