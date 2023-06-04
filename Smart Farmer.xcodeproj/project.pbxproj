@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2335D4D52A2D2CDE0047029F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2335D4D42A2D2CDE0047029F /* GoogleService-Info.plist */; };
 		235E5D3729DC933F0089FC85 /* LunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E5D3629DC933F0089FC85 /* LunchVC.swift */; };
 		235E5D3929DC94800089FC85 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E5D3829DC94800089FC85 /* Constants.swift */; };
 		2369A1B229EE89E80019EAC8 /* SensorDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2369A1B129EE89E80019EAC8 /* SensorDetailsVC.swift */; };
@@ -38,6 +39,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2335D4CE2A2D299D0047029F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2335D4D42A2D2CDE0047029F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		235E5D3629DC933F0089FC85 /* LunchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchVC.swift; sourceTree = "<group>"; };
 		235E5D3829DC94800089FC85 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2369A1B129EE89E80019EAC8 /* SensorDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDetailsVC.swift; sourceTree = "<group>"; };
@@ -48,7 +51,6 @@
 		2379915429DC5D63002FDAEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2379915929DC5D63002FDAEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2379915B29DC5D66002FDAEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2379916029DC5D66002FDAEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		238213072A274B4F00467766 /* GraphVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphVC.swift; sourceTree = "<group>"; };
 		23A2C8FB29EEA550006E28FD /* InstantiationExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantiationExtention.swift; sourceTree = "<group>"; };
 		23A38BDA2A28A4E0005B5347 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
@@ -156,7 +158,8 @@
 				2379916829DC5DE1002FDAEA /* View */,
 				2379916929DC5DE8002FDAEA /* Controller */,
 				2379915B29DC5D66002FDAEA /* Assets.xcassets */,
-				2379916029DC5D66002FDAEA /* Info.plist */,
+				2335D4CE2A2D299D0047029F /* Info.plist */,
+				2335D4D42A2D2CDE0047029F /* GoogleService-Info.plist */,
 			);
 			path = "Smart Farmer";
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				2379914B29DC5D63002FDAEA /* Sources */,
 				2379914C29DC5D63002FDAEA /* Frameworks */,
 				2379914D29DC5D63002FDAEA /* Resources */,
+				5F420D5C7CBB9C5950C5CC60 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -306,6 +310,7 @@
 				2379915C29DC5D66002FDAEA /* Assets.xcassets in Resources */,
 				23A38BE92A295266005B5347 /* Launch Screen.storyboard in Resources */,
 				23FCA7E329ECE9C70046E4DA /* SensorsTableViewCell.xib in Resources */,
+				2335D4D52A2D2CDE0047029F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +337,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F420D5C7CBB9C5950C5CC60 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Smart Farmer/Pods-Smart Farmer-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Smart Farmer/Pods-Smart Farmer-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Smart Farmer/Pods-Smart Farmer-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

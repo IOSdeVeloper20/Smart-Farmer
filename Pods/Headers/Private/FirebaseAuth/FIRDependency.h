@@ -1,0 +1,1 @@
+../../../FirebaseAuth/FirebaseCore/Extension/FIRDependency.h

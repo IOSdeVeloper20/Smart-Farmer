@@ -1,0 +1,1 @@
+../../../FirebaseAuth/FirebaseCore/Extension/FIRComponentContainer.h

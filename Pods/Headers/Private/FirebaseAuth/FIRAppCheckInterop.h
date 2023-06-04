@@ -1,0 +1,1 @@
+../../../FirebaseAuth/FirebaseAppCheck/Interop/FIRAppCheckInterop.h

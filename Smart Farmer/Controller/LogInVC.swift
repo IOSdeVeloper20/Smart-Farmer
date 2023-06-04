@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LogInVC: UIViewController {
 
@@ -15,11 +16,17 @@ class LogInVC: UIViewController {
     @IBAction func forgotPassButton(_ sender: UIButton) {
     }
     @IBAction func logInButton(_ sender: UIButton) {
-        //check if logged in then instantiate tab bar controller (AppTB)
-        let loginToTabBar = (storyboard?.instantiateViewController(withIdentifier: Constants.tabBar))!
-        loginToTabBar.modalPresentationStyle = .fullScreen
-        loginToTabBar.modalTransitionStyle = .flipHorizontal
-        present(loginToTabBar, animated: true, completion: nil)
+        //validate user
+        if let email = logInEmailTF.text, let password = logInPasswordTF.text {
+            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+                if let e = error {
+                    print(e.localizedDescription)
+                } else {
+                    //check if logged in then instantiate tab bar controller (AppTB)
+                    self.instantiateTabBarFromLogin()
+                }
+            }
+        }
     }
     
 //MARK: Variables
@@ -64,5 +71,12 @@ class LogInVC: UIViewController {
             tappedImage.image = UIImage(systemName: "eye.slash")
             logInPasswordTF.isSecureTextEntry = true
         }
+    }
+    
+    func instantiateTabBarFromLogin() {
+        let loginToTabBar = (storyboard?.instantiateViewController(withIdentifier: Constants.tabBar))!
+        loginToTabBar.modalPresentationStyle = .fullScreen
+        loginToTabBar.modalTransitionStyle = .flipHorizontal
+        present(loginToTabBar, animated: true, completion: nil)
     }
 }
