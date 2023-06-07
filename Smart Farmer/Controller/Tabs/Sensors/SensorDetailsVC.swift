@@ -28,7 +28,5 @@ class SensorDetailsVC: UIViewController {
         sensorDetailsImage.image = sensDetails?.image
         sensorDetailsTitleLbl.text = sensDetails?.title
         sensorDetailsDescriptionLbl.text = sensDetails?.description
-        
-        print("sins")
     }
 }

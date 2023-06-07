@@ -54,9 +54,8 @@ extension SensorsVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let sensorVC = SensorDetailsVC()
+        let sensorVC = SensorDetailsVC.instatiate()
         sensorVC.sensDetails = sensorsData[indexPath.row]
-        let vc = (storyboard?.instantiateViewController(withIdentifier: Constants.sensorDetails))!
-        navigationController?.pushViewController(vc, animated: true)
+        navigationController?.pushViewController(sensorVC, animated: true)
     }
 }

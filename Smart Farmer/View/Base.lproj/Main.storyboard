@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T1w-dG-P5b">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -47,7 +48,7 @@
                                         </buttonConfiguration>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
+                                                <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -66,7 +67,7 @@
                                         </buttonConfiguration>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
+                                                <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -203,7 +204,7 @@
                                                 </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
+                                                        <integer key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -275,18 +276,25 @@
                                                     <rect key="frame" x="16" y="486" width="357" height="108"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This app will help you manage you crop." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHs-8h-L7Y">
-                                                            <rect key="frame" x="29" y="0.0" width="299" height="74"/>
+                                                            <rect key="frame" x="16" y="0.0" width="325" height="74"/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="31"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This app will help you manage you crop." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ZG-AA-EXk">
-                                                            <rect key="frame" x="42" y="90" width="273.33333333333331" height="18"/>
+                                                            <rect key="frame" x="16" y="90" width="325" height="18"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="9ZG-AA-EXk" firstAttribute="leading" secondItem="8Xu-Zg-SDs" secondAttribute="leading" constant="16" id="0YE-N3-UDD"/>
+                                                        <constraint firstItem="cHs-8h-L7Y" firstAttribute="leading" secondItem="8Xu-Zg-SDs" secondAttribute="leading" constant="16" id="2iN-l4-cAh"/>
+                                                        <constraint firstAttribute="trailing" secondItem="9ZG-AA-EXk" secondAttribute="trailing" constant="16" id="54o-im-zlQ"/>
+                                                        <constraint firstItem="9ZG-AA-EXk" firstAttribute="top" secondItem="cHs-8h-L7Y" secondAttribute="bottom" constant="16" id="Wz3-Z0-qtn"/>
+                                                        <constraint firstAttribute="trailing" secondItem="cHs-8h-L7Y" secondAttribute="trailing" constant="16" id="u0j-vH-vKi"/>
+                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
@@ -324,7 +332,9 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="nextClicked:" destination="T1w-dG-P5b" eventType="touchUpInside" id="n6d-A9-REu"/>
@@ -444,7 +454,7 @@
                                                 </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
+                                                        <integer key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -517,16 +527,16 @@
                                 <rect key="frame" x="0.0" y="155" width="393" height="614"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DS7-21-hvq">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="685.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="687"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tracking Graph" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKG-dc-1mu">
-                                                <rect key="frame" x="16" y="32" width="361" height="20.333333333333329"/>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crop Live Statics" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKG-dc-1mu">
+                                                <rect key="frame" x="16" y="32" width="361" height="21.666666666666671"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X7L-8a-mYp">
-                                                <rect key="frame" x="16" y="68.333333333333343" width="361" height="300"/>
+                                                <rect key="frame" x="16" y="69.666666666666657" width="361" height="300"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="300" id="JFG-zc-UFd"/>
                                                 </constraints>
@@ -535,7 +545,7 @@
                                                 </connections>
                                             </containerView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="tEp-U6-B1e" userLabel="WaterLvlStack">
-                                                <rect key="frame" x="16" y="400.33333333333337" width="361" height="66.333333333333314"/>
+                                                <rect key="frame" x="16" y="401.66666666666663" width="361" height="66.333333333333314"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="TqL-H2-yly">
                                                         <rect key="frame" x="0.0" y="0.0" width="154.66666666666666" height="20.333333333333332"/>
@@ -554,11 +564,17 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" maximumValueImage="drop.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="waV-Ts-nrP">
-                                                        <rect key="frame" x="-2" y="36.333333333333258" width="365" height="31"/>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="waV-Ts-nrP">
+                                                        <rect key="frame" x="-2" y="36.333333333333371" width="365" height="31"/>
                                                         <imageReference key="minimumValueImage" image="drop" catalog="system" symbolScale="small"/>
-                                                        <color key="minimumTrackTintColor" systemColor="systemCyanColor"/>
-                                                        <color key="maximumTrackTintColor" systemColor="systemMintColor"/>
+                                                        <imageReference key="maximumValueImage" image="drop.fill" catalog="system" renderingMode="hierarchical-single">
+                                                            <hierarchicalColors>
+                                                                <color systemColor="systemIndigoColor"/>
+                                                                <color systemColor="secondaryLabelColor"/>
+                                                                <color systemColor="tertiaryLabelColor"/>
+                                                            </hierarchicalColors>
+                                                        </imageReference>
+                                                        <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                                         <color key="thumbTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </slider>
                                                 </subviews>
@@ -568,7 +584,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="nge-Tj-93v" userLabel="TempratureLvlStack">
-                                                <rect key="frame" x="16" y="498.66666666666657" width="361" height="66.333333333333314"/>
+                                                <rect key="frame" x="16" y="499.99999999999994" width="361" height="66.333333333333314"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="wmX-Q3-pn8">
                                                         <rect key="frame" x="0.0" y="0.0" width="199.33333333333334" height="20.333333333333332"/>
@@ -587,10 +603,23 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="thermometer.low" catalog="system" maximumValueImage="thermometer.high" translatesAutoresizingMaskIntoConstraints="NO" id="tJU-yY-SyZ">
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="tJU-yY-SyZ">
                                                         <rect key="frame" x="-2" y="36.333333333333371" width="365" height="31"/>
-                                                        <color key="minimumTrackTintColor" systemColor="systemYellowColor"/>
-                                                        <color key="maximumTrackTintColor" systemColor="systemOrangeColor"/>
+                                                        <imageReference key="minimumValueImage" image="thermometer.low" catalog="system" renderingMode="hierarchical-single">
+                                                            <hierarchicalColors>
+                                                                <color systemColor="systemYellowColor"/>
+                                                                <color systemColor="secondaryLabelColor"/>
+                                                                <color systemColor="tertiaryLabelColor"/>
+                                                            </hierarchicalColors>
+                                                        </imageReference>
+                                                        <imageReference key="maximumValueImage" image="thermometer.high" catalog="system" renderingMode="hierarchical-single">
+                                                            <hierarchicalColors>
+                                                                <color systemColor="systemRedColor"/>
+                                                                <color systemColor="secondaryLabelColor"/>
+                                                                <color systemColor="tertiaryLabelColor"/>
+                                                            </hierarchicalColors>
+                                                        </imageReference>
+                                                        <color key="minimumTrackTintColor" systemColor="systemOrangeColor"/>
                                                         <color key="thumbTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </slider>
                                                 </subviews>
@@ -600,7 +629,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="nMg-5b-qq1" userLabel="LightStackView">
-                                                <rect key="frame" x="16" y="597" width="361" height="56.666666666666629"/>
+                                                <rect key="frame" x="16" y="598.33333333333337" width="361" height="56.666666666666629"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gv-PV-WUv">
                                                         <rect key="frame" x="156.33333333333334" y="0.0" width="48.333333333333343" height="20.333333333333332"/>
@@ -609,9 +638,10 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nU8-EH-W0c">
-                                                        <rect key="frame" x="170.66666666666666" y="32.000000000000036" width="19.666666666666657" height="28.666666666666657"/>
+                                                        <rect key="frame" x="170.66666666666666" y="31.999999999999922" width="19.666666666666657" height="28.666666666666664"/>
                                                         <color key="tintColor" red="0.29393124580000002" green="0.64031428099999999" blue="0.26658031339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <imageReference key="image" image="lightbulb" catalog="system" symbolScale="large"/>
+                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
@@ -662,6 +692,7 @@
                         <outlet property="lightImage" destination="nU8-EH-W0c" id="0mY-86-1Xk"/>
                         <outlet property="tempratureLvlSlider" destination="tJU-yY-SyZ" id="3L2-b5-gdY"/>
                         <outlet property="tempraturePercentageLbl" destination="gtu-2C-Goq" id="C2X-7o-icC"/>
+                        <outlet property="titleLbl" destination="vKG-dc-1mu" id="5XQ-Ja-P8d"/>
                         <outlet property="waterLvlSlider" destination="waV-Ts-nrP" id="6a3-UL-Sod"/>
                         <outlet property="waterPercentageLbl" destination="ixX-ks-dIt" id="Yij-s5-hm8"/>
                     </connections>
@@ -737,7 +768,7 @@
         <!--Sensor DetailsVC-->
         <scene sceneID="t9d-AT-i5g">
             <objects>
-                <viewController storyboardIdentifier="sensorDetails" id="icZ-bv-5xH" customClass="SensorDetailsVC" customModule="Smart_Farmer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SensorDetailsVC" id="icZ-bv-5xH" customClass="SensorDetailsVC" customModule="Smart_Farmer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xkN-x6-abg">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1009,14 +1040,17 @@
         <namedColor name="GreenColor">
             <color red="0.29393124580000002" green="0.64031428099999999" blue="0.26658031339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemCyanColor">
-            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1026,6 +1060,9 @@
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

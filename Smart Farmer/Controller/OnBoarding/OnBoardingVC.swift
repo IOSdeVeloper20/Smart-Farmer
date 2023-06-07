@@ -49,9 +49,9 @@ class OnBoardingVC: UIViewController {
         collectionView.dataSource = self
         
         slides = [
-            Slides( title: "This app will help you manage you crop.", description: "hello", image: UIImage(named: "Slide1")!),
-            Slides( title: "This app will help you manage you crop.", description: "hello", image: UIImage(named: "Slide2")!),
-            Slides( title: "This app will help you manage you crop.", description: "hello", image: UIImage(named: "Slide3")!)
+            Slides( title: "This app will help you manage you crop.", description: "hello this application is made by ahmed sherif", image: UIImage(named: "Slide1")!),
+            Slides( title: "This app will help you manage you crop.", description: "hello this application is made by ahmed sherif", image: UIImage(named: "Slide2")!),
+            Slides( title: "This app will help you manage you crop.", description: "hello this application is made by ahmed sherif", image: UIImage(named: "Slide3")!)
         ]
     }
     

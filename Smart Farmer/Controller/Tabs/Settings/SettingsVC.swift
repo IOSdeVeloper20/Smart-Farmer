@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SettingsVC: UIViewController {
     
@@ -15,6 +16,22 @@ class SettingsVC: UIViewController {
         loggedOut.modalPresentationStyle = .fullScreen
         loggedOut.modalTransitionStyle = .coverVertical
         present(loggedOut, animated: true, completion: nil)
+        
+        
+        //LogOut user
+        do
+            {
+              try Auth.auth().signOut()
+//              let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let settingToLunch = (storyboard?.instantiateViewController(withIdentifier: Constants.lunchNC))
+            }
+            catch let error as NSError
+            {
+              print(error.localizedDescription)
+            }
+             
+             
+          
     }
     @IBOutlet weak var appearanceButtonImage: UIButton!
     @IBAction func AppearanceButton(_ sender: UIButton) {

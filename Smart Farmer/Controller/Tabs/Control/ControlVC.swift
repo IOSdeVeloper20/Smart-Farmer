@@ -51,11 +51,26 @@ extension ControlVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = ControlTableVIew.dequeueReusableCell(withIdentifier: Constants.controlCell, for: indexPath) as! ControlTableViewCell
         cell.setUpControl(controlData: controls[indexPath.row])
+        
+//        
+//         switch indexPath.row {
+//         case 0:
+//             // Handle functionality for the first cell's switch button
+//             cell.controlSwitch(<#T##sender: UISwitch##UISwitch#>)
+//             break
+//         case 1:
+//             // Handle functionality for the second cell's switch button
+//             break
+//         // Handle other cases as needed...
+//         default:
+//             break
+//         }
+//         
         return cell
     }
 
     //when any cell is selected
 //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//    }
+    
     
 }

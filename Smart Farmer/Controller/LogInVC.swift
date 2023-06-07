@@ -16,17 +16,18 @@ class LogInVC: UIViewController {
     @IBAction func forgotPassButton(_ sender: UIButton) {
     }
     @IBAction func logInButton(_ sender: UIButton) {
+        self.instantiateTabBarFromLogin()
         //validate user
-        if let email = logInEmailTF.text, let password = logInPasswordTF.text {
-            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
-                if let e = error {
-                    print(e.localizedDescription)
-                } else {
-                    //check if logged in then instantiate tab bar controller (AppTB)
-                    self.instantiateTabBarFromLogin()
-                }
-            }
-        }
+//        if let email = logInEmailTF.text, let password = logInPasswordTF.text {
+//            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+//                if let e = error {
+//                    print(e.localizedDescription)
+//                } else {
+//                    //check if logged in then instantiate tab bar controller (AppTB)
+//                    self.instantiateTabBarFromLogin()
+//                }
+//            }
+//        }
     }
     
 //MARK: Variables

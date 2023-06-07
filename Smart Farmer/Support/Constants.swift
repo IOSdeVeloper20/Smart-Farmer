@@ -14,6 +14,6 @@ struct Constants {
     static var lunchNC = "lunchNC"
     static var tabBar = "AppTB"
     static var sensorCell = "SensorsTableViewCell"
-    static var sensorDetails = "sensorDetails"
+    static var sensorDetails = "SensorDetailsVC"
     static var controlCell = "ControlTableViewCell"
 }
