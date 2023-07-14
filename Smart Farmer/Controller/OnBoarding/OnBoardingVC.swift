@@ -35,7 +35,7 @@ class OnBoardingVC: UIViewController {
         didSet {    // to get if current page ever changed
             pageControl.currentPage = currentPage
             if (currentPage == slides.count - 1) {
-                nextButton.setTitle("Sign Up", for: .normal)
+                nextButton.setTitle("Let's Go", for: .normal)
             } else {
                 nextButton.setTitle("next", for: .normal)
             }

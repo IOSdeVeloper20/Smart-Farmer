@@ -22,15 +22,15 @@ class SettingsVC: UIViewController {
         do
             {
               try Auth.auth().signOut()
-//              let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let settingToLunch = (storyboard?.instantiateViewController(withIdentifier: Constants.lunchNC))
+                settingToLunch?.modalPresentationStyle = .fullScreen
+                settingToLunch?.modalTransitionStyle = .coverVertical
+                present(settingToLunch!, animated: true, completion: nil)
             }
             catch let error as NSError
             {
               print(error.localizedDescription)
             }
-             
-             
           
     }
     @IBOutlet weak var appearanceButtonImage: UIButton!

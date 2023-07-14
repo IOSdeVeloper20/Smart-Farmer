@@ -14,22 +14,16 @@ class HomeVC: UIViewController {
     
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var waterPercentageLbl: UILabel!
-    
     @IBOutlet weak var waterLvlSlider: UISlider!
-    
     @IBOutlet weak var tempraturePercentageLbl: UILabel!
-    
     @IBOutlet weak var tempratureLvlSlider: UISlider!
-    
     @IBOutlet weak var lightImage: UIImageView!
     
 //MARK: Variables
     var ref: DatabaseReference?
-    var degrees = [String]()
     var resetTempSlider = Float()
     var resetWaterSlider = Float()
 
-    
 //MARK: LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,9 +38,10 @@ class HomeVC: UIViewController {
         obsereveTempData()
         obsereveLightData()
     }
-    
+
 
 //MARK: Functions
+    
     func obsereveWaterData() {
         self.ref?.child("RandomVal").observe(.value, with: { snapshot in
             self.waterPercentageLbl.text = ""
@@ -73,7 +68,7 @@ class HomeVC: UIViewController {
                 for degree in temperature {
                     if let degreeValue = degree.value as? String {
                         self.resetTempSlider = Float(degreeValue)!
-                        self.tempraturePercentageLbl.text = self.tempraturePercentageLbl.text! + degreeValue + "%"
+                        self.tempraturePercentageLbl.text = self.tempraturePercentageLbl.text! + degreeValue + "°C"
                         self.tempratureLvlSlider.setValue(Float(degreeValue)!, animated: true)
                     }
                 }

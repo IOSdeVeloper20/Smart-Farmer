@@ -14,9 +14,9 @@ class SensorsVC: UIViewController {
     
 //MARK: Variables
     var sensorsData: [Sensors] = [
-        .init(image: UIImage(named: "Temperature sensor"), title: "Temperature Sensor", description: "testdesc0"),
-        .init(image: UIImage(named: "Temperature sensor"), title: "test1", description: "testdesc1"),
-        .init(image: UIImage(named: "Temperature sensor"), title: "test2", description: "testdes2")
+        .init(image: UIImage(named: "PIR sensor"), title: "PIR movement detection Sensor", description: "Also known as a data selector, is a device that selects between several analog or digital input signals and forwards the selected input to a single output line. The selection is directed by a separate set of digital inputs known as select lines."),
+        .init(image: UIImage(named: "soil sensor"), title: "Soil Moisture Sensor", description: "A soil moisture sensor can read the amount of moisture present in the soil surrounding it. This sensor uses the two probes to pass current through the soil, and then it reads that resistance to get the moisture level. More water makes the soil conduct electricity more easily, while dry soil conducts electricity poorly."),
+        .init(image: UIImage(named: "Temperature sensor"), title: "DHT11 Temperature Sensor", description: "Is a device or device that can convert temperature and humidity into electrical signals that can be easily measured and processed.")
         
     ]
 //MARK: Life Cycle

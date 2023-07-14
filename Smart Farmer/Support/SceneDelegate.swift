@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: scene)
         
         var controller: UIViewController!
-        
+        //check for on boarding 
         if UserDefaults.standard.hasOnBoarded {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             controller = storyboard.instantiateViewController(withIdentifier: Constants.lunchNC)

@@ -144,7 +144,7 @@
                                                     <constraint firstAttribute="height" constant="48" id="Nhf-xw-xEW"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
                                             </textField>
                                         </subviews>
                                         <color key="tintColor" red="0.82600296929999995" green="0.82600296929999995" blue="0.82600296929999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -170,7 +170,7 @@
                                                     <constraint firstAttribute="height" constant="48" id="32B-Fo-xzZ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -204,7 +204,7 @@
                                                 </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="10"/>
+                                                        <integer key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -406,7 +406,7 @@
                                                     <constraint firstAttribute="height" constant="48" id="lUc-bb-Mbu"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -430,7 +430,7 @@
                                                     <constraint firstAttribute="height" constant="48" id="pV6-C0-B9p"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" textContentType="password"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -454,7 +454,7 @@
                                                 </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="10"/>
+                                                        <integer key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>

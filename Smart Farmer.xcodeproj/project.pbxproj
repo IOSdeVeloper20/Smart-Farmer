@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2335D4D52A2D2CDE0047029F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2335D4D42A2D2CDE0047029F /* GoogleService-Info.plist */; };
+		232ECCBE2A323CE3004B1D6B /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232ECCBD2A323CE3004B1D6B /* NotificationManager.swift */; };
+		232F4C152A31EDF700153560 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232F4C142A31EDF700153560 /* WeatherInfo.swift */; };
+		234EAED72A30F35500A30D16 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 234EAED62A30F35500A30D16 /* GoogleService-Info.plist */; };
 		235E5D3729DC933F0089FC85 /* LunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E5D3629DC933F0089FC85 /* LunchVC.swift */; };
 		235E5D3929DC94800089FC85 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E5D3829DC94800089FC85 /* Constants.swift */; };
 		2369A1B229EE89E80019EAC8 /* SensorDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2369A1B129EE89E80019EAC8 /* SensorDetailsVC.swift */; };
@@ -39,8 +41,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2335D4CE2A2D299D0047029F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2335D4D42A2D2CDE0047029F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		232ECCBD2A323CE3004B1D6B /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		232F4C142A31EDF700153560 /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
+		234EAED62A30F35500A30D16 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		235E5D3629DC933F0089FC85 /* LunchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchVC.swift; sourceTree = "<group>"; };
 		235E5D3829DC94800089FC85 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2369A1B129EE89E80019EAC8 /* SensorDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDetailsVC.swift; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		2379915429DC5D63002FDAEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2379915929DC5D63002FDAEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2379915B29DC5D66002FDAEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2379916029DC5D66002FDAEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		238213072A274B4F00467766 /* GraphVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphVC.swift; sourceTree = "<group>"; };
 		23A2C8FB29EEA550006E28FD /* InstantiationExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantiationExtention.swift; sourceTree = "<group>"; };
 		23A38BDA2A28A4E0005B5347 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
@@ -158,8 +162,8 @@
 				2379916829DC5DE1002FDAEA /* View */,
 				2379916929DC5DE8002FDAEA /* Controller */,
 				2379915B29DC5D66002FDAEA /* Assets.xcassets */,
-				2335D4CE2A2D299D0047029F /* Info.plist */,
-				2335D4D42A2D2CDE0047029F /* GoogleService-Info.plist */,
+				2379916029DC5D66002FDAEA /* Info.plist */,
+				234EAED62A30F35500A30D16 /* GoogleService-Info.plist */,
 			);
 			path = "Smart Farmer";
 			sourceTree = "<group>";
@@ -180,6 +184,7 @@
 				23F7431829DE386B008EADD4 /* OnBoardingSlides.swift */,
 				23FCA7E429ECEDA90046E4DA /* Sensors.swift */,
 				23A38BE62A28D3F1005B5347 /* Controls.swift */,
+				232F4C142A31EDF700153560 /* WeatherInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 				23A2C8FB29EEA550006E28FD /* InstantiationExtention.swift */,
 				23A38BDA2A28A4E0005B5347 /* CustomTableViewCell.swift */,
 				23A38BEA2A295A8A005B5347 /* UserDefaultsExtension.swift */,
+				232ECCBD2A323CE3004B1D6B /* NotificationManager.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -256,7 +262,7 @@
 				2379914B29DC5D63002FDAEA /* Sources */,
 				2379914C29DC5D63002FDAEA /* Frameworks */,
 				2379914D29DC5D63002FDAEA /* Resources */,
-				5F420D5C7CBB9C5950C5CC60 /* [CP] Copy Pods Resources */,
+				A4FC5BC24560E14945807E0E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,7 +316,7 @@
 				2379915C29DC5D66002FDAEA /* Assets.xcassets in Resources */,
 				23A38BE92A295266005B5347 /* Launch Screen.storyboard in Resources */,
 				23FCA7E329ECE9C70046E4DA /* SensorsTableViewCell.xib in Resources */,
-				2335D4D52A2D2CDE0047029F /* GoogleService-Info.plist in Resources */,
+				234EAED72A30F35500A30D16 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +345,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5F420D5C7CBB9C5950C5CC60 /* [CP] Copy Pods Resources */ = {
+		A4FC5BC24560E14945807E0E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -365,9 +371,11 @@
 			files = (
 				23FCA7E529ECEDA90046E4DA /* Sensors.swift in Sources */,
 				23B042B929E374470025999F /* SignUpVC.swift in Sources */,
+				232F4C152A31EDF700153560 /* WeatherInfo.swift in Sources */,
 				23D8B88D29EB070600E0D14A /* HomeVC.swift in Sources */,
 				23F7431B29DE3D07008EADD4 /* OnBoardingCollectionViewCell.swift in Sources */,
 				235E5D3729DC933F0089FC85 /* LunchVC.swift in Sources */,
+				232ECCBE2A323CE3004B1D6B /* NotificationManager.swift in Sources */,
 				23A38BE42A28B18F005B5347 /* ControlTableViewCell.swift in Sources */,
 				23A38BDB2A28A4E0005B5347 /* CustomTableViewCell.swift in Sources */,
 				2369A1B929EE8C6A0019EAC8 /* SettingsVC.swift in Sources */,

@@ -2,7 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -29,8 +30,8 @@
                                     <constraint firstAttribute="width" constant="50" id="cjc-UE-uFv"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJ2-3N-tJq">
-                                <rect key="frame" x="82" y="30.666666666666664" width="42.666666666666657" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJ2-3N-tJq">
+                                <rect key="frame" x="82.000000000000014" y="31" width="148.33333333333337" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -44,6 +45,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="CaT-Vq-lgY" secondAttribute="bottom" constant="16" id="Hce-ZX-MJ9"/>
+                            <constraint firstItem="Zkh-OY-Ugw" firstAttribute="leading" secondItem="pJ2-3N-tJq" secondAttribute="trailing" constant="16" id="IZR-fK-u7y"/>
                             <constraint firstItem="CaT-Vq-lgY" firstAttribute="leading" secondItem="pcS-20-3jI" secondAttribute="leading" constant="16" id="KLI-WH-udw"/>
                             <constraint firstItem="pJ2-3N-tJq" firstAttribute="centerY" secondItem="CaT-Vq-lgY" secondAttribute="centerY" id="QzI-Vb-OT7"/>
                             <constraint firstAttribute="trailing" secondItem="Zkh-OY-Ugw" secondAttribute="trailing" constant="16" id="UQW-7i-Myc"/>

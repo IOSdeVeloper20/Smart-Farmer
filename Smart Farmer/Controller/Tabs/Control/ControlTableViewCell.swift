@@ -14,12 +14,11 @@ class ControlTableViewCell: UITableViewCell {
     @IBOutlet weak var controlLabel: UILabel!
     
     @IBAction func controlSwitch(_ sender: UISwitch) {
-        if sender.isOn {
-            print("..\(sender)..")
-        } else {
-            print("..\(sender)..")
-        }
+        switchButtonHandler?(sender.isOn)
     }
+//MARK: Variables
+    var switchButtonHandler: ((Bool) -> Void)?
+//    switchValueChangedHandler?(sender.isOn)
     
 //MARK: Fucntions
     func setUpControl(controlData: Controls) {
