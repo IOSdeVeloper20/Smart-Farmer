@@ -2,13 +2,21 @@
 Smart Farmer is a crop live data viewer and controller iOS application that could be used by any farmer to control any type of crop.
 
 ## Features
-1- Grid and List Views: The app supports both grid and list views for displaying menu items, providing a versatile user experience.
+1- Location services: The app uses location services to get the temperature of an accurate location of the crop.
 
-2- Item description: Each product is presented with its description on a different page with an image, name, and calories, making it easy for users to browse and select items.
+2- SignUP / Login: The application is connected to Firebase as its database, and the user must sign up or log in if he has already an account to access the data and control the sensors.
 
-3- Add orders: Users can add orders to their cart with a single tap after adding their names, providing a seamless ordering experience.
+3- Live data preview: Users can add orders to their cart with a single tap after adding their names, providing a seamless ordering experience.
 
-5- checking orders: The ordered items will be shown in the cart with the name of the person who made the order.
+4- Charts: The application preview live data from the sensors in the crop and show them directly on a chart.
+
+5- Notifications: The application notifies the user if the crop needs to be watered or if the temperature is high to let the user water the crop more than one time that day.
+
+6- Sensors control: The application gives the user the ability to control each sensor in the crop.
+
+7- sensor details: The application can show the used sensors in the crop and give the details of each one of them.
+
+8- Application Theme: The user can choose the theme of the application whether Dark or Light mode.
 
 ## UI
 <img src="https://github.com/IOSdeVeloper20/Smart-Farmer/assets/81517945/f50ec301-4aee-4059-8858-14fb59f60a2b" width="170" height="360" />
