@@ -54,37 +54,37 @@ class LogInVC: UIViewController, UITextFieldDelegate {
     
     @IBAction func logInButton(_ sender: UIButton) {
         
-        let loginToTabBar = (self.storyboard?.instantiateViewController(withIdentifier: Constants.tabBar))!
-        loginToTabBar.modalPresentationStyle = .fullScreen
-        loginToTabBar.modalTransitionStyle = .flipHorizontal
-        self.present(loginToTabBar, animated: true, completion: nil)
+//        let loginToTabBar = (self.storyboard?.instantiateViewController(withIdentifier: Constants.tabBar))!
+//        loginToTabBar.modalPresentationStyle = .fullScreen
+//        loginToTabBar.modalTransitionStyle = .flipHorizontal
+//        self.present(loginToTabBar, animated: true, completion: nil)
         
         //validate user
-//        if let email = logInEmailTF.text, let password = logInPasswordTF.text {
-//            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
-//                if let e = error {
-//                    print(e.localizedDescription)
-//                    // Show a error message
-//                    let successAlert = UIAlertController(title: "error", message: e.localizedDescription, preferredStyle: .alert)
-//                    self.present(successAlert, animated: true, completion: nil)
-//
-//                    // Dismiss the alert after a delay
-//                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-//                        UIView.animate(withDuration: 0.5, animations: {
-//                            successAlert.view.alpha = 0.0
-//                        }) { _ in
-//                            successAlert.dismiss(animated: true, completion: nil)
-//                        }
-//                    }
-//                } else {
-//                    //check if logged in then instantiate tab bar controller (AppTB)
-//                    let loginToTabBar = (self.storyboard?.instantiateViewController(withIdentifier: Constants.tabBar))!
-//                    loginToTabBar.modalPresentationStyle = .fullScreen
-//                    loginToTabBar.modalTransitionStyle = .flipHorizontal
-//                    self.present(loginToTabBar, animated: true, completion: nil)
-//                }
-//            }
-//        }
+        if let email = logInEmailTF.text, let password = logInPasswordTF.text {
+            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+                if let e = error {
+                    print(e.localizedDescription)
+                    // Show a error message
+                    let successAlert = UIAlertController(title: "error", message: e.localizedDescription, preferredStyle: .alert)
+                    self.present(successAlert, animated: true, completion: nil)
+
+                    // Dismiss the alert after a delay
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                        UIView.animate(withDuration: 0.5, animations: {
+                            successAlert.view.alpha = 0.0
+                        }) { _ in
+                            successAlert.dismiss(animated: true, completion: nil)
+                        }
+                    }
+                } else {
+                    //check if logged in then instantiate tab bar controller (AppTB)
+                    let loginToTabBar = (self.storyboard?.instantiateViewController(withIdentifier: Constants.tabBar))!
+                    loginToTabBar.modalPresentationStyle = .fullScreen
+                    loginToTabBar.modalTransitionStyle = .flipHorizontal
+                    self.present(loginToTabBar, animated: true, completion: nil)
+                }
+            }
+        }
     }
     
 //MARK: Variables
