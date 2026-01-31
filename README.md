@@ -1,5 +1,5 @@
 # Smart-Farmer
-Smart Farmer is a crop live data viewer and controller iOS application that could be used by any farmer to control any type of crop.
+Smart Farmer is a crop live data viewer and controller mobile application that could be used by any farmer to control any type of crop.
 
 ## Features
 1- Location services: The app uses location services to get the temperature of an accurate location of the crop.
